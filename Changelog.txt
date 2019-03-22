@@ -9,6 +9,8 @@ config :
     -Full mystical agriculture reroll
     
 Mods remove :
+    -flatcoloredblocks
+    -VariedCommodities
     -
 Mods update :
     -
