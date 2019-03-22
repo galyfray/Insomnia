@@ -11,6 +11,15 @@ config :
 Mods remove :
     -flatcoloredblocks
     -VariedCommodities
-    -
+    -BetterAdvancements
 Mods update :
+    -ActuallyAdditions
+    -AppleCore
+    -AutoRegLib
+    -Avaritia
+    -badwithernocookiereloaded
+    -base
+    -Baubles
+    -BetterBuildersWands
+    -binnie mods
     -
