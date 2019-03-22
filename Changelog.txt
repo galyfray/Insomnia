@@ -8,11 +8,12 @@ config :
     -Full jetpack reroll
     -Full mystical agriculture reroll
     
-Mods remove :
+Mods removed :
     -flatcoloredblocks
     -VariedCommodities
     -BetterAdvancements
-Mods update :
+    -DefaultOptions
+Mods updated :
     -ActuallyAdditions
     -AppleCore
     -AutoRegLib
@@ -22,4 +23,14 @@ Mods update :
     -Baubles
     -BetterBuildersWands
     -binnie mods
+    -Bookshelf
+    -Botania
+    -Charset Lib
+    -Chisel
+    -Clumps
+    -compactmachines
+    -CookingForBlockheads
+    -CTM
+    -CustomNPCs
+    -Dark Utilities
     -
