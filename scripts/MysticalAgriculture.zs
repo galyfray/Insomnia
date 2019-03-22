@@ -5,15 +5,22 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.item.WeightedItemStack;
+import crafttweaker.recipes.ICraftingRecipe;
 
-var Stone= <mysticalagriculture:infusion_crystal>.anyDamage().transformDamage()|<mysticalagriculture:master_infusion_crystal>;
-var i=1 as int;
-var b=0 as int;
-var j=0 as int;
-var S as IItemStack;
-var B as IItemStack;
-var E as IItemStack;
-var Nom as string;
+var stone= <mysticalagriculture:infusion_crystal>.anyDamage().transformDamage()|<mysticalagriculture:master_infusion_crystal>;
+var i=1 as int ;
+var j as int ;
+var b as int ;
+var S as IItemStack ;
+var B as IItemStack ;
+var E as IItemStack ;
+var recipe as ICraftingRecipe ;
+var block as IIngredient ;
+var itemCraft as IItemStack ;
+var oreEntry as IOreDictEntry;
+var nom as string ;
+
+var test as IIngredient;
 
 function MA_Craft(i as int) as IItemStack {
 	return <mysticalagriculture:crafting>.definition.makeStack(i);
@@ -28,6 +35,18 @@ function MA_Chunk(i as int) as IIngredient {
 }
 
 print("---------------------------------Misc---------------------------------");
+
+<mysticalagriculture:cow_seeds>.addTooltip("praise super","meuh meuh","bros");
+
+
+//seed renaming for recipes name
+
+nom = <mysticalagriculture:tier1_inferium_seeds>.displayName ;
+<mysticalagriculture:tier1_inferium_seeds>.displayName = nom + " Tier1" ;
+<mysticalagriculture:tier2_inferium_seeds>.displayName = nom + " Tier2" ;
+<mysticalagriculture:tier3_inferium_seeds>.displayName = nom + " Tier3" ;
+<mysticalagriculture:tier4_inferium_seeds>.displayName = nom + " Tier4" ;
+<mysticalagriculture:tier5_inferium_seeds>.displayName = nom + " Tier5" ;
 
 //watering can
 
@@ -58,9 +77,9 @@ mods.avaritia.ExtremeCrafting.addShaped("Growth_Accelerator",<mysticalagricultur
 	[null,B,B,B,B,B,B,B,null],
 	[null,null,null,null,null,null,null,null,null]]);
 
-//augmentation de tier des essances
-
 print("--------------------------inferium essances--------------------------");
+
+//augmentation de tier des essances
 
 recipes.remove(<mysticalagriculture:crafting>);
 recipes.remove(<mysticalagriculture:storage>);
@@ -82,7 +101,7 @@ for i in 1 to 5 {
 	
 	recipes.addShaped("CT_MA_" ~ b ~ "T" ~ i ,MA_Craft(i),[
 	[MA_Storage(b),MA_Storage(b),MA_Storage(b)],
-	[MA_Storage(b),Stone,MA_Storage(b)],
+	[MA_Storage(b),stone,MA_Storage(b)],
 	[MA_Storage(b),MA_Storage(b),MA_Storage(b)]]);
 	recipes.addShaped("CT_MA_storage_" + i ,MA_Storage(i),[
 	[MA_Craft(i),MA_Craft(i),MA_Craft(i)],
@@ -138,34 +157,43 @@ function T3Define(Out as IItemStack, In as IIngredient) {
 	
 }
 
-
-Nom = <mysticalagriculture:aluminum_seeds>.displayName;
-<mysticalagriculture:aluminum_seeds>.clearTooltip() ;
-<mysticalagriculture:aluminum_seeds>.addTooltip(Nom);
-<mysticalagriculture:aluminum_seeds>.addTooltip("Tier: "+format.gold("3"));
-
 T3Define(<mysticalagriculture:tier3_inferium_seeds>,<mysticalagriculture:storage:2>);
-T3Define(<mysticalagriculture:iron_seeds>,<minecraft:iron_block>);
-T3Define(<mysticalagriculture:nether_quartz_seeds>,<minecraft:quartz_block>);
-T3Define(<mysticalagriculture:glowstone_seeds>,<minecraft:glowstone>);
-T3Define(<mysticalagriculture:redstone_seeds>,<minecraft:redstone_block>);
-T3Define(<mysticalagriculture:obsidian_seeds>,<minecraft:obsidian>);
-T3Define(<mysticalagriculture:skeleton_seeds>,MA_Chunk(12));
-T3Define(<mysticalagriculture:creeper_seeds>,MA_Chunk(13));
-T3Define(<mysticalagriculture:spider_seeds>,MA_Chunk(14));
-T3Define(<mysticalagriculture:rabbit_seeds>,MA_Chunk(15));
-T3Define(<mysticalagriculture:guardian_seeds>,MA_Chunk(16));
-T3Define(<mysticalagriculture:aluminum_seeds>,<ore:blockAluminum>);
-T3Define(<mysticalagriculture:saltpeter_seeds>,<ore:dustSaltpeter>);
-T3Define(<mysticalagriculture:tin_seeds>,<ore:blockTin>);
-T3Define(<mysticalagriculture:bronze_seeds>,<ore:blockBronze>);
-T3Define(<mysticalagriculture:silver_seeds>,<ore:blockSilver>);
-T3Define(<mysticalagriculture:lead_seeds>,<ore:blockLead>);
-T3Define(<mysticalagriculture:blizz_seeds>,MA_Chunk(21));
-T3Define(<mysticalagriculture:blitz_seeds>,MA_Chunk(22));
-T3Define(<mysticalagriculture:basalz_seeds>,MA_Chunk(23));
-T3Define(<mysticalagriculture:knightslime_seeds>,<ore:blockKnightslime>);
-T3Define(<mysticalagriculture:ardite_seeds>,<ore:blockArdite>);
+
+for seed in <ore:seedsTier3>.items {
+	
+	
+	for recipe in recipes.getRecipesFor(seed){
+		
+		itemCraft=recipe.ingredients1D[0].items[0];
+		block = recipes.craft([[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft]]);
+		
+		//test=block.items[0];//.definition.ores;
+		//print(test.commandString);
+		
+		
+		
+		if(isNull(block)){
+			
+			block=recipes.craft([[itemCraft,itemCraft],[itemCraft,itemCraft]]);
+			
+			if (isNull(block)){
+				
+				T3Define(seed,itemCraft);
+			
+			}
+			else{
+			
+				T3Define(seed,block);
+			
+			}
+		}
+		else{
+			
+			T3Define(seed,block);
+		
+		}
+	}
+}
 
 //Seed Tier 4
 
@@ -191,23 +219,38 @@ function T4Define(Out as IItemStack, In as IIngredient) {
 
 }
 
-T3Define(<mysticalagriculture:tier4_inferium_seeds>,<mysticalagriculture:storage:3>);
-T4Define(<mysticalagriculture:gold_seeds>,<minecraft:gold_block>);
-T4Define(<mysticalagriculture:lapis_lazuli_seeds>,<minecraft:lapis_block>);
-T4Define(<mysticalagriculture:end_seeds>,MA_Craft(9));
-T4Define(<mysticalagriculture:experience_seeds>,MA_Chunk(5));
-T4Define(<mysticalagriculture:blaze_seeds>,MA_Chunk(17));
-T4Define(<mysticalagriculture:ghast_seeds>,MA_Chunk(18));
-T4Define(<mysticalagriculture:enderman_seeds>,MA_Chunk(19));
-T4Define(<mysticalagriculture:steel_seeds>,<ore:blockSteel>);
-T4Define(<mysticalagriculture:nickel_seeds>,<ore:blockNickel>);
-T4Define(<mysticalagriculture:constantan_seeds>,<ore:blockConstantan>);
-T4Define(<mysticalagriculture:electrum_seeds>,<ore:blockElectrum>);
-T4Define(<mysticalagriculture:invar_seeds>,<ore:blockInvar>);
-T4Define(<mysticalagriculture:mithril_seeds>,<ore:blockMithril>);
-T4Define(<mysticalagriculture:signalum_seeds>,<ore:blockSignalum>);
-T4Define(<mysticalagriculture:lumium_seeds>,<ore:blockLumium>);
-T4Define(<mysticalagriculture:cobalt_seeds>,<ore:blockCobalt>);
+T4Define(<mysticalagriculture:tier4_inferium_seeds>,<mysticalagriculture:storage:3>);
+
+for seed in <ore:seedsTier4>.items {
+	
+	
+	for recipe in recipes.getRecipesFor(seed){
+		
+		itemCraft=recipe.ingredients1D[0].items[0];
+		block = recipes.craft([[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft]]);
+		
+		if(isNull(block)){
+			
+			block=recipes.craft([[itemCraft,itemCraft],[itemCraft,itemCraft]]);
+			
+			if (isNull(block)){
+				
+				T4Define(seed,itemCraft);
+			
+			}
+			else{
+			
+				T4Define(seed,block);
+			
+			}
+		}
+		else{
+			
+			T4Define(seed,block);
+		
+		}
+	}
+}
 
 //Seed Tier5
 
@@ -234,12 +277,37 @@ function T5Define(Out as IItemStack, In as IIngredient) {
 }
 
 T5Define(<mysticalagriculture:tier5_inferium_seeds>,<mysticalagriculture:storage:4>);
-T5Define(<mysticalagriculture:diamond_seeds>,<minecraft:diamond_block>);
-T5Define(<mysticalagriculture:emerald_seeds>,<minecraft:emerald_block>);
-T5Define(<mysticalagriculture:wither_skeleton_seeds>,MA_Chunk(20));
-T5Define(<mysticalagriculture:platinum_seeds>,<ore:blockPlatinum>);
-T5Define(<mysticalagriculture:iridium_seeds>,<ore:blockIridium>);
-T5Define(<mysticalagriculture:enderium_seeds>,<ore:blockEnderium>);
-T5Define(<mysticalagriculture:manyullyn_seeds>,<ore:blockManyullyn>);
+
+for seed in <ore:seedsTier5>.items {
+	
+	
+	for recipe in recipes.getRecipesFor(seed){
+		
+		itemCraft=recipe.ingredients1D[0].items[0];
+		block = recipes.craft([[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft]]);
+		
+		if(isNull(block)){
+			
+			block=recipes.craft([[itemCraft,itemCraft],[itemCraft,itemCraft]]);
+			
+			if (isNull(block)){
+				
+				T5Define(seed,itemCraft);
+			
+			}
+			else{
+			
+				T5Define(seed,block);
+			
+			}
+		}
+		else{
+			
+			T5Define(seed,block);
+		
+		}
+	}
+}
 
 print("--------------------------------Fin--------------------------------");
+
