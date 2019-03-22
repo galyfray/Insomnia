@@ -1,0 +1,14 @@
+remove : 
+    -Deep dark portal craft
+    -Book binder craft
+    -Writting desk craft
+adding :
+    -ToolTip for removed craft
+config :
+    -Full jetpack reroll
+    -Full mystical agriculture reroll
+    
+Mods remove :
+    -
+Mods update :
+    -
