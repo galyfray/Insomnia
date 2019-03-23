@@ -16,6 +16,8 @@ Mods removed :
     -DefaultOptions
     -Diet Hoppers
     -Ding
+    -Snad
+    -SplashAnimation
 Mods updated :
     -ActuallyAdditions
     -AppleCore
@@ -55,4 +57,52 @@ Mods updated :
     -FTB Library
     -FTB Utilities
     -SimpleHarvest
-    -
+    -Immersive Engineering
+    -Industrial Foregoing
+    -Iron Chests
+    -JEHC
+    -JEI
+    -JourneyMap
+    -Mantle
+    -McJtyLib
+    -More Overlays
+    -Morpheus
+    -Mouse Tweaks
+    -MTLib
+    -Mystical Agriculture
+    -Natura
+    -NuclearCraft
+    -OpenBlocks
+    -OpenComputers
+    -OpenModsLib
+    -Ore Excavation
+    -Pam's HarvestCraft
+    -Optifine
+    -Pretty Beaches
+    -Quark
+    -Railcraft
+    -Redstone Arsenal
+    -RFTools
+    -RFTools Control
+    -RFTools Power
+    -Scaling Health
+    -Silent Lib
+    -Simply Jetpacks 2
+    -Storage Drawers
+    -Tinkers Construct
+    -Tech Reborn
+    -The One Probe
+    -Thermal Cultivation
+    -Thermal Expansion
+    -Thermal Dynamics
+    -Thermal Foundation
+    -Tinkers' Tool Leveling
+    -TipTheScales
+    -TOP Addons
+    -TorchMaster
+    -Translocators
+    -unDict
+    -ValkyrieLib
+    -WanionLib
+    -Xnet
+    -ZeroCore
