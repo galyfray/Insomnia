@@ -159,6 +159,9 @@ function T3Define(Out as IItemStack, In as IIngredient) {
 
 T3Define(<mysticalagriculture:tier3_inferium_seeds>,<mysticalagriculture:storage:2>);
 
+<ore:seedsTier3>.remove(<mysticalagriculture:electrotine_seeds>);
+T3Define(<mysticalagriculture:electrotine_seeds>,<projectred-exploration:stone:11>);
+
 for seed in <ore:seedsTier3>.items {
 	
 	
