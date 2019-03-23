@@ -81,6 +81,7 @@ Mods updated :
     -Pretty Beaches
     -Quark
     -Railcraft
+    -Reborn Core
     -Redstone Arsenal
     -RFTools
     -RFTools Control
