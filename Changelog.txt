@@ -18,6 +18,7 @@ Mods removed :
     -Ding
     -Snad
     -SplashAnimation
+    -simple logic
 Mods updated :
     -ActuallyAdditions
     -AppleCore
