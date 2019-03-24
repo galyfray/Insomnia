@@ -100,9 +100,9 @@ for i in 1 to 5 {
 	recipes.addShapeless("CT_MA_" + i + "T"+ b , MA_Storage(b)*8,[MA_Craft(i)]);
 	
 	recipes.addShaped("CT_MA_" ~ b ~ "T" ~ i ,MA_Craft(i),[
-	[MA_Storage(b),MA_Storage(b),MA_Storage(b)],
-	[MA_Storage(b),stone,MA_Storage(b)],
-	[MA_Storage(b),MA_Storage(b),MA_Storage(b)]]);
+	[null         ,MA_Storage(b),null         ],
+	[MA_Storage(b),stone        ,MA_Storage(b)],
+	[null         ,MA_Storage(b),null         ]]);
 	recipes.addShaped("CT_MA_storage_" + i ,MA_Storage(i),[
 	[MA_Craft(i),MA_Craft(i),MA_Craft(i)],
 	[MA_Craft(i),MA_Craft(i),MA_Craft(i)],
