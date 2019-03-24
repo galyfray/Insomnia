@@ -7,8 +7,9 @@ adding :
 config :
     -Full jetpack reroll
     -Full mystical agriculture reroll
-Mods aded :
+Mods added :
     -Too Many Efficiency Losses
+    -PlusTiC
 Mods removed :
     -flatcoloredblocks
     -VariedCommodities
