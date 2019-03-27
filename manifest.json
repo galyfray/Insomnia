@@ -1,0 +1,8 @@
+{
+    "rules": [
+        {
+            "from": "http://axelandre42.ovh/insomnia/NuclearCraft-2.14c-1.12.2.jar",
+            "to": "."
+        }
+    ]
+}
