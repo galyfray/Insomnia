@@ -20,8 +20,6 @@ var itemCraft as IItemStack ;
 var oreEntry as IOreDictEntry;
 var nom as string ;
 
-var test as IIngredient;
-
 function MA_Craft(i as int) as IItemStack {
 	return <mysticalagriculture:crafting>.definition.makeStack(i);
 }
@@ -97,9 +95,9 @@ for i in 1 to 5 {
 	recipes.remove(MA_Storage(i));
 	
 	recipes.addShapeless("CT_MA_Uncomp" + i ,MA_Craft(i)*9,[MA_Storage(i)]);
-	recipes.addShapeless("CT_MA_" + i + "T"+ b , MA_Storage(b)*4,[MA_Craft(i)]);
+	recipes.addShapeless("CT_MA_" + i + "T"+ b , MA_Storage(b)*2,[MA_Craft(i)]);
 	
-	recipes.addShaped("CT_MA_" ~ b ~ "T" ~ i ,MA_Craft(i),[
+	recipes.addShaped("CT_MA_" ~ b ~ "T" ~ i ,MA_Craft(i)*2,[
 	[null         ,MA_Storage(b),null         ],
 	[MA_Storage(b),stone        ,MA_Storage(b)],
 	[null         ,MA_Storage(b),null         ]]);
@@ -169,11 +167,6 @@ for seed in <ore:seedsTier3>.items {
 		
 		itemCraft=recipe.ingredients1D[0].items[0];
 		block = recipes.craft([[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft],[itemCraft,itemCraft,itemCraft]]);
-		
-		//test=block.items[0];//.definition.ores;
-		//print(test.commandString);
-		
-		
 		
 		if(isNull(block)){
 			
