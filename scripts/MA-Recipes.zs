@@ -186,7 +186,7 @@ function exceptionDefine(OutName as string,InName as string,Tier as int,InMeta a
 	}
 }
 
-exceptionDefine("mysticalagriculture:electrotine_seeds","projectred-exploration:stone:11",3,0);
+exceptionDefine("mysticalagriculture:electrotine_seeds","projectred-exploration:stone",3,11);
 exceptionDefine("mysticalagriculture:experience_seeds","mysticalagriculture:chunk",4,5);
 
 
