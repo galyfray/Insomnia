@@ -20,6 +20,53 @@ var blockNameList =[
 "dense_redstone",
 "denser_intermedium",
 "denser_superium",
+"dense_obsidian",
+"dense_creeper",
+"dense_skeleton",
+"dense_rabbit",
+"dense_guardian",
+"dense_spider",
+"dense_enderman",
+"dense_end",
+"dense_ghast",
+"dense_blaze",
+"dense_lapis_lazuli",
+"dense_wither_skeleton",
+"dense_experience",
+"dense_bronze",
+"dense_tin",
+"dense_lead",
+"dense_silver",
+"dense_aluminum",
+"dense_electrum",
+"dense_signalum",
+"dense_invar",
+"dense_steel",
+"dense_nickel",
+"dense_constantan",
+"dense_enderium",
+"dense_platinum",
+"dense_iridium",
+"dense_mithril",
+"dense_lumium",
+"dense_redstone_alloy",
+"dense_conductive_iron",
+"dense_electrical_steel",
+"dense_soularium",
+"dense_energetic_alloy",
+"dense_pulsating_iron",
+"dense_dark_steel",
+"dense_vibrant_alloy",
+"dense_end_steel",
+"dense_blitz",
+"dense_basalz",
+"dense_saltpeter",
+] as string[] ;
+
+var itemNameList =[
+"fertilized_t3_crafting_seed",
+"fertilized_t4_crafting_seed",
+"fertilized_t5_crafting_seed",
 ] as string[] ;
 
 var nom as string ;
@@ -27,16 +74,25 @@ var nom as string ;
 var Tab = mods.contenttweaker.VanillaFactory.createCreativeTab("insomnia",<item:minecraft:nether_star> );
 Tab.register();
 
-var StorageT3=VanillaFactory.createBlock("tier3_inferium" ,<blockmaterial:Rock>);
+var block=VanillaFactory.createBlock("tier3_inferium" ,<blockmaterial:Rock>);
 
 for nom in blockNameList{
-	StorageT3 = VanillaFactory.createBlock(nom,<blockmaterial:Rock>);
-	StorageT3.setCreativeTab(<creativetab:insomnia>);
-	StorageT3.register();
+	block = VanillaFactory.createBlock(nom,<blockmaterial:Rock>);
+	block.setCreativeTab(<creativetab:insomnia>);
+	block.register();
 }
 	
-StorageT3 = VanillaFactory.createBlock("dense_glowstone",<blockmaterial:Rock>);
-StorageT3.setCreativeTab(<creativetab:insomnia>);
-StorageT3.setLightValue(15);
-StorageT3.setLightOpacity(0);
-StorageT3.register();
+block = VanillaFactory.createBlock("dense_glowstone",<blockmaterial:Rock>);
+block.setCreativeTab(<creativetab:insomnia>);
+block.setLightValue(1);
+block.setLightOpacity(255);
+block.register();
+
+var Item=VanillaFactory.createItem("init");
+
+for nom in itemNameList{
+	Item = VanillaFactory.createItem(nom);
+	Item.setCreativeTab(<creativetab:insomnia>);
+	Item.glowing = true ;
+	Item.register();	
+}

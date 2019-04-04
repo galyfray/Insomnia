@@ -32,7 +32,7 @@ function MA_Chunk(i as int) as IIngredient {
 	return <mysticalagriculture:chunk>.definition.makeStack(i);
 }
 
-print("---------------------------------Misc---------------------------------");
+print("--------------------------------Misc--------------------------------");
 
 <mysticalagriculture:cow_seeds>.addTooltip("praise super meuh meuh bros");
 
@@ -75,7 +75,7 @@ mods.avaritia.ExtremeCrafting.addShaped("Growth_Accelerator",<mysticalagricultur
 	[null,B,B,B,B,B,B,B,null],
 	[null,null,null,null,null,null,null,null,null]]);
 
-print("--------------------------inferium essances--------------------------");
+print("-------------------------inferium essances-------------------------");
 
 //augmentation de tier des essances
 
@@ -110,7 +110,7 @@ for i in 1 to 5 {
 
 //crafting seed modif
 
-print("----------------------------crafting seed----------------------------");
+print("---------------------------crafting seed---------------------------");
 
 recipes.remove(<mysticalagriculture:crafting:16>);
 
@@ -137,6 +137,59 @@ recipes.addShaped("Denser intermedium",<contenttweaker:denser_intermedium>,[
 [null,null,null],
 [MA_Storage(2),MA_Storage(2),MA_Storage(2)]]);
 
+recipes.addShaped("Denser superium",<contenttweaker:denser_superium>,[
+[MA_Storage(3),MA_Storage(3),MA_Storage(3)],
+[null,null,null],
+[MA_Storage(3),MA_Storage(3),MA_Storage(3)]]);
+
+E=<mysticalagriculture:fertilized_essence>;
+
+recipes.addShaped("Fertilized Tier 3 Crafting Seed",<contenttweaker:fertilized_t3_crafting_seed>,[
+[MA_Craft(19),E           ,MA_Craft(19)],
+[E           ,MA_Craft(19),E           ],
+[MA_Craft(19),E           ,MA_Craft(19)]]);
+
+E=<mysticalagriculture:growth_accelerator>;
+
+recipes.addShaped("Fertilized Tier 4 Crafting Seed",<contenttweaker:fertilized_t4_crafting_seed>,[
+[MA_Craft(20),E           ,MA_Craft(20)],
+[E           ,MA_Craft(20),E           ],
+[MA_Craft(20),E           ,MA_Craft(20)]]);
+
+E=<mysticalagriculture:watering_can:4>;
+
+recipes.addShaped("Fertilized Tier 5 Crafting Seed",<contenttweaker:fertilized_t5_crafting_seed>,[
+[MA_Craft(21),E           ,MA_Craft(21)],
+[E           ,MA_Craft(21),E           ],
+[MA_Craft(21),E           ,MA_Craft(21)]]);
+
+print("-----------------------------exception-----------------------------");
+
+function exceptionDefine(OutName as string,InName as string,Tier as int,InMeta as int){
+	if(!(isNull(itemUtils.getItem(OutName,0)))){
+		
+		var Out =itemUtils.getItem(OutName,0);
+		var In =itemUtils.getItem(InName,InMeta);
+		
+		if(Tier==3){
+			<ore:seedsTier3>.remove(Out);
+			T3Define(Out,In);
+		}
+		if(Tier==4){
+			<ore:seedsTier4>.remove(Out);
+			T4Define(Out,In);
+		}
+		if(Tier==5){
+			<ore:seedsTier5>.remove(Out);
+			T3Define(Out,In);
+		}
+	}
+}
+
+exceptionDefine("mysticalagriculture:electrotine_seeds","projectred-exploration:stone:11",3,0);
+exceptionDefine("mysticalagriculture:experience_seeds","mysticalagriculture:chunk",4,5);
+
+
 print("-------------------------------Tier3-------------------------------");
 
 //Seed Tier 3
@@ -161,11 +214,12 @@ function T3Define(Out as IItemStack, In as IIngredient) {
 	[null,null,null,null,null,null,null,null,null]]);
 	
 	var DI = <contenttweaker:denser_intermedium>;
+	var FS = <contenttweaker:fertilized_t3_crafting_seed>;
 	var SeedName=Out.commandString as string;
 	var DenseName= "contenttweaker:dense_" + SeedName.substring( 21 , SeedName.length() - 7 ) as string;
 	
 	if( isNull(itemUtils.getItem(DenseName))){
-		print("[T3] TO DO: " + DenseName);
+		print("[T3] TO DO: " + DenseName + " ID:" + In.commandString);
 	}
 	else{
 		var DB = itemUtils.getItem(DenseName);
@@ -175,17 +229,13 @@ function T3Define(Out as IItemStack, In as IIngredient) {
 		[In,In]]);
 		
 		recipes.addShaped(Out.displayName + "_Bis" , Out ,[
-		[DI,DB,DI],
-		[DB,DB,DB],
-		[DI,DB,DI]]);
+		[DB,DI,DB],
+		[DI,FS,DI],
+		[DB,DI,DB]]);
 	}
 }
 
 T3Define(<mysticalagriculture:tier3_inferium_seeds>,<mysticalagriculture:storage:2>);
-if (!(isNull(itemUtils.getItem("mysticalagriculture:electrotine_seeds",0)))){
-	<ore:seedsTier3>.remove(itemUtils.getItem("mysticalagriculture:electrotine_seeds",0));
-	T3Define(itemUtils.getItem("mysticalagriculture:electrotine_seeds",0),itemUtils.getItem("projectred-exploration:stone:11",0));
-}
 
 for seed in <ore:seedsTier3>.items {
 	
@@ -239,7 +289,27 @@ function T4Define(Out as IItemStack, In as IIngredient) {
 	[null,In,In,B,B,B,In,In,null],
 	[null,In,In,B,B,B,In,In,null],
 	[null,null,null,null,null,null,null,null,null]]);
-
+	
+	var DI = <contenttweaker:denser_superium>;
+	var FS = <contenttweaker:fertilized_t4_crafting_seed>;
+	var SeedName=Out.commandString as string;
+	var DenseName= "contenttweaker:dense_" + SeedName.substring( 21 , SeedName.length() - 7 ) as string;
+	
+	if( isNull(itemUtils.getItem(DenseName))){
+		print("[T4] TO DO: " + DenseName + " ID:" + In.commandString);
+	}
+	else{
+		var DB = itemUtils.getItem(DenseName);
+		
+		recipes.addShaped(DB.displayName,DB,[
+		[In,In],
+		[In,In]]);
+		
+		recipes.addShaped(Out.displayName + "_Bis" , Out ,[
+		[DB,DI,DB],
+		[DI,FS,DI],
+		[DB,DI,DB]]);
+	}
 }
 
 T4Define(<mysticalagriculture:tier4_inferium_seeds>,<mysticalagriculture:storage:3>);
@@ -272,6 +342,7 @@ for seed in <ore:seedsTier4>.items {
 			T4Define(seed,block);
 		
 		}
+		
 	}
 }
 
@@ -296,7 +367,28 @@ function T5Define(Out as IItemStack, In as IIngredient) {
 	[In,In,In,B,B,B,In,In,In],
 	[In,In,In,B,B,B,In,In,In],
 	[In,In,In,B,B,B,In,In,In]]);
-
+	
+	var DI = <contenttweaker:dense_tier5_inferium>;
+	var FS = <contenttweaker:fertilized_t5_crafting_seed>;
+	var SeedName=Out.commandString as string;
+	var DenseName= "contenttweaker:dense_" + SeedName.substring( 21 , SeedName.length() - 7 ) as string;
+	
+	if( isNull(itemUtils.getItem(DenseName))){
+		print("[T5] TO DO: " + DenseName + " ID:" + In.commandString);
+	}
+	else{
+		var DB = itemUtils.getItem(DenseName);
+		
+		recipes.addShaped(DB.displayName,DB,[
+		[In,In,In],
+		[In,In,In],
+		[In,In,In]]);
+		
+		recipes.addShaped(Out.displayName + "_Bis" , Out ,[
+		[DB,DI,DB],
+		[DI,FS,DI],
+		[DB,DI,DB]]);
+	}
 }
 
 T5Define(<mysticalagriculture:tier5_inferium_seeds>,<mysticalagriculture:storage:4>);
