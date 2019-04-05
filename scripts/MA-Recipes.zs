@@ -166,7 +166,7 @@ recipes.addShaped("Fertilized Tier 5 Crafting Seed",<contenttweaker:fertilized_t
 print("-----------------------------exception-----------------------------");
 
 function exceptionDefine(OutName as string,InName as string,Tier as int,InMeta as int){
-	if(!(isNull(itemUtils.getItem(OutName,0)))){
+	if(!(isNull(itemUtils.getItem(OutName,0)) || isNull(itemUtils.getItem(InName,0)))){
 		
 		var Out =itemUtils.getItem(OutName,0);
 		var In =itemUtils.getItem(InName,InMeta);
@@ -186,7 +186,7 @@ function exceptionDefine(OutName as string,InName as string,Tier as int,InMeta a
 	}
 }
 
-exceptionDefine("mysticalagriculture:electrotine_seeds","projectred-exploration:stone:11",3,0);
+exceptionDefine("mysticalagriculture:electrotine_seeds","projectred-exploration:stone",3,11);
 exceptionDefine("mysticalagriculture:experience_seeds","mysticalagriculture:chunk",4,5);
 
 
