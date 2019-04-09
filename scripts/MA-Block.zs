@@ -88,6 +88,15 @@ var blockNameList =[
 "dense_uranium",
 "dense_chrome",
 "dense_manyullyn",
+"dense_ender_biotite",
+"dense_ardite",
+"dense_quicksilver",
+"dense_thaumium",
+"dense_alumite",
+"dense_amber",
+"dense_void_metal",
+"dense_fluxed_electrum"
+"dense_fertilized_essence",
 ] as string[] ;
 
 var itemNameList =[

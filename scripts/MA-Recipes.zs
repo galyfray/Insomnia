@@ -64,16 +64,25 @@ B=<mysticalagriculture:storage:3>;
 S=<minecraft:diamond_block>;
 E=<mysticalagriculture:fertilized_essence>;
 
-mods.avaritia.ExtremeCrafting.addShaped("Growth_Accelerator",<mysticalagriculture:growth_accelerator>,[
+mods.avaritia.ExtremeCrafting.addShaped("Growth_Accelerator",<mysticalagriculture:growth_accelerator>*2,[
 	[null,null,null,null,null,null,null,null,null],
 	[null,B,B,B,B,B,B,B,null],
 	[null,B,E,E,E,E,E,B,null],
-	[null,B,E,E,S,E,E,B,null],
 	[null,B,E,S,S,S,E,B,null],
-	[null,B,E,E,S,E,E,B,null],
+	[null,B,E,S,S,S,E,B,null],
+	[null,B,E,S,S,S,E,B,null],
 	[null,B,E,E,E,E,E,B,null],
 	[null,B,B,B,B,B,B,B,null],
 	[null,null,null,null,null,null,null,null,null]]);
+
+B=<contenttweaker:dense_tier4_inferium>;
+E=<contenttweaker:dense_fertilized_essence>;
+S=<contenttweaker:dense_diamond>;
+
+	recipes.addShaped("Growth_Accelerator_Bis",<mysticalagriculture:growth_accelerator>,[
+	[ ,B, ],
+	[E,S,E],
+	[B, ,B]]);
 
 print("-------------------------inferium essances-------------------------");
 
