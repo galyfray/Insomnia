@@ -1,8 +1,5 @@
 adding :
-    -ToolTip for removed craft
-config :
-    -minor jetpack tweak
-    -minor mystical agriculture tweak
-	-all Insolator recipes with mystical agriculture reroll
+    -Plein de block pour automatiser les craft
+    -Recette pour les graine sans Avaritia
 Mods added :
-    -ModTweaker
+    -Content Tweaker
