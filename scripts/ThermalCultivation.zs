@@ -24,8 +24,8 @@ for seed in <ore:seedsTier4>.items{
 	//changing recipes
 	mods.thermalexpansion.Insolator.removeRecipe(seed, <thermalfoundation:fertilizer:1>);
 	mods.thermalexpansion.Insolator.removeRecipe(seed, <thermalfoundation:fertilizer:2>);
-	mods.thermalexpansion.Insolator.addRecipe(essence, seed, <thermalfoundation:fertilizer:1>, 14400 , seed, 100);
-	mods.thermalexpansion.Insolator.addRecipe(essence, seed, <thermalfoundation:fertilizer:2>, 19200 , seed, 105);
+	mods.thermalexpansion.Insolator.addRecipe(essence*2, seed, <thermalfoundation:fertilizer:1>, 14400 , seed, 100);
+	mods.thermalexpansion.Insolator.addRecipe(essence*3, seed, <thermalfoundation:fertilizer:2>, 19200 , seed, 105);
 	
 }
 
@@ -41,7 +41,7 @@ for seed in <ore:seedsTier5>.items{
 	//changing recipes
 	mods.thermalexpansion.Insolator.removeRecipe(seed, <thermalfoundation:fertilizer:1>);
 	mods.thermalexpansion.Insolator.removeRecipe(seed, <thermalfoundation:fertilizer:2>);
-	mods.thermalexpansion.Insolator.addRecipe(essence, seed, <thermalfoundation:fertilizer:1>, 14400 , seed, 100);
-	mods.thermalexpansion.Insolator.addRecipe(essence, seed, <thermalfoundation:fertilizer:2>, 19200 , seed, 102);
+	mods.thermalexpansion.Insolator.addRecipe(essence*2, seed, <thermalfoundation:fertilizer:1>, 14400 , seed, 100);
+	mods.thermalexpansion.Insolator.addRecipe(essence*5, seed, <thermalfoundation:fertilizer:2>, 19200 , seed, 102);
 	
 }
