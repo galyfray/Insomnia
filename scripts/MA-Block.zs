@@ -95,7 +95,7 @@ var blockNameList =[
 "dense_alumite",
 "dense_amber",
 "dense_void_metal",
-"dense_fluxed_electrum"
+"dense_fluxed_electrum",
 "dense_fertilized_essence",
 ] as string[] ;
 

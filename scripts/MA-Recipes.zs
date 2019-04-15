@@ -80,9 +80,9 @@ E=<contenttweaker:dense_fertilized_essence>;
 S=<contenttweaker:dense_diamond>;
 
 	recipes.addShaped("Growth_Accelerator_Bis",<mysticalagriculture:growth_accelerator>,[
-	[ ,B, ],
-	[E,S,E],
-	[B, ,B]]);
+	[null,B   ,null],
+	[E   ,S   ,E   ],
+	[B   ,null,B   ]]);
 
 print("-------------------------inferium essances-------------------------");
 
