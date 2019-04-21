@@ -1,4 +1,6 @@
 #loader contenttweaker
+#modloaded minecraft
+#priority 2
 
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.VanillaFactory;
@@ -6,7 +8,6 @@ import mods.contenttweaker.Block;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.CreativeTab;
 import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
 
 var blockNameList =[ 
 "dense_tier3_inferium",

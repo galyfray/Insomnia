@@ -1,0 +1,10 @@
+{
+    "food": {
+        "items": [
+            "harvestcraft:cheesyshrimpquinoaitem",
+            "harvestcraft:crackersandcheeseitem",
+            "harvestcraft:paneertikkamasalaitem"
+        ]
+    },
+    "name": "Dairy Meal"
+}

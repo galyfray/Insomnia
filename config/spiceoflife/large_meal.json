@@ -1,0 +1,24 @@
+{
+    "food": {
+        "items": [
+            "harvestcraft:chickenandwafflesitem",
+            "harvestcraft:chimichangaitem",
+            "harvestcraft:cornedbeefbreakfastitem",
+            "harvestcraft:cornedbeefhashitem",
+            "harvestcraft:delightedmealitem",
+            "harvestcraft:deluxechickencurryitem",
+            "harvestcraft:deluxenachoesitem",
+            "harvestcraft:heartybreakfastitem",
+            "harvestcraft:koreandinneritem",
+            "harvestcraft:mcpamitem",
+            "harvestcraft:meatfeastpizzaitem",
+            "harvestcraft:ploughmanslunchitem",
+            "harvestcraft:salisburysteakitem",
+            "harvestcraft:southernstylebreakfastitem",
+            "harvestcraft:supremepizzaitem",
+            "harvestcraft:thankfuldinneritem",
+            "harvestcraft:weekendpicnicitem"
+        ]
+    },
+    "name": "Large Meal"
+}

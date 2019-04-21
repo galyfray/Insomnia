@@ -1,0 +1,22 @@
+{
+    "food": {
+        "items": [
+            "actuallyadditions:item_food:10",
+            "actuallyadditions:item_food:15",
+            "actuallyadditions:item_food:17",
+            "minecraft:bread",
+            "harvestcraft:banananutbreaditem",
+            "harvestcraft:cheeseontoastitem",
+            "harvestcraft:cornbreaditem",
+            "harvestcraft:croissantitem",
+            "harvestcraft:damperitem",
+            "harvestcraft:datenutbreaditem",
+            "harvestcraft:gritsitem",
+            "harvestcraft:lavendershortbreaditem",
+            "harvestcraft:naanitem",
+            "harvestcraft:toastitem",
+            "harvestcraft:zucchinibreaditem"
+        ]
+    },
+    "name": "Bread"
+}

@@ -1,0 +1,646 @@
+<galaxy>
+	<star name="Sol" temp="100" x="0" y="0" size="1.0" numPlanets="0" numGasGiants="0">
+		<planet name="Earth" DIMID="0" dimMapping="" customIcon="earthlike">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalTheta>0</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>100</atmosphereDensity>
+			<planet name="Luna" DIMID="3" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>50</gravitationalMultiplier>
+				<orbitalDistance>150</orbitalDistance>
+				<orbitalTheta>0</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>72000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Mercury" DIMID="10" customIcon="marslike">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>50</gravitationalMultiplier>
+			<orbitalDistance>10</orbitalDistance>
+			<orbitalTheta>45</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>8000</rotationalPeriod>
+			<atmosphereDensity>30</atmosphereDensity>
+			<biomeIds>advancedrocketry:hotdryrock</biomeIds>
+		</planet>
+		<planet name="Venus" DIMID="11" customIcon="marslike">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.8,0.827,0.145</skyColor>
+			<gravitationalMultiplier>98</gravitationalMultiplier>
+			<orbitalDistance>60</orbitalDistance>
+			<orbitalTheta>90</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>16000</rotationalPeriod>
+			<atmosphereDensity>140</atmosphereDensity>
+			<biomeIds>advancedrocketry:deepswamp</biomeIds>
+		</planet>
+		<planet name="Mars" DIMID="12" customIcon="marslike">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1,0.482,0.235</skyColor>
+			<gravitationalMultiplier>90</gravitationalMultiplier>
+			<orbitalDistance>120</orbitalDistance>
+			<orbitalTheta>135</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>70</atmosphereDensity>
+			<biomeIds>minecraft:mutated_mesa_rock</biomeIds>
+			<planet name="Phobos" DIMID="20" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>0.8,0.658,0.113</skyColor>
+				<gravitationalMultiplier>90</gravitationalMultiplier>
+				<orbitalDistance>90</orbitalDistance>
+				<orbitalTheta>270</orbitalTheta>
+				<orbitalPhi>90</orbitalPhi>
+				<rotationalPeriod>12000</rotationalPeriod>
+				<atmosphereDensity>155</atmosphereDensity>
+				<biomeIds>advancedrocketry:marsh</biomeIds>
+			</planet>
+			<planet name="Deimos" DIMID="21" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>0.8,0.658,0.113</skyColor>
+				<gravitationalMultiplier>90</gravitationalMultiplier>
+				<orbitalDistance>150</orbitalDistance>
+				<orbitalTheta>90</orbitalTheta>
+				<orbitalPhi>270</orbitalPhi>
+				<rotationalPeriod>12000</rotationalPeriod>
+				<atmosphereDensity>155</atmosphereDensity>
+				<biomeIds>advancedrocketry:alien forest</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Jupiter" DIMID="13" customIcon="gasgiantred">
+			<isKnown>true</isKnown>
+			<GasGiant>true</GasGiant>
+			<gas>fluidhelium</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.956,0.690,0.305</skyColor>
+			<gravitationalMultiplier>150</gravitationalMultiplier>
+			<orbitalDistance>125</orbitalDistance>
+			<orbitalTheta>120</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>54000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<planet name="Ganymede" DIMID="22" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>110</gravitationalMultiplier>
+				<orbitalDistance>60</orbitalDistance>
+				<orbitalTheta>45</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>24000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>minecraft:mutated_mesa_clear_rock</biomeIds>
+			</planet>
+			<planet name="Europa" DIMID="23" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>100</gravitationalMultiplier>
+				<orbitalDistance>110</orbitalDistance>
+				<orbitalTheta>180</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>24000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>minecraft:frozen_ocean</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Saturn" DIMID="14" customIcon="gasgiantred">
+			<isKnown>true</isKnown>
+			<hasRings>true</hasRings>
+			<ringColor>0.733,0.698,0.466</ringColor>
+			<GasGiant>true</GasGiant>
+			<gas>fluidhelium</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.8,0.784,0.250</skyColor>
+			<gravitationalMultiplier>140</gravitationalMultiplier>
+			<orbitalDistance>160</orbitalDistance>
+			<orbitalTheta>225</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<planet name="Titan" DIMID="24" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>0.8,0.827,0.145</skyColor>
+				<gravitationalMultiplier>110</gravitationalMultiplier>
+				<orbitalDistance>80</orbitalDistance>
+				<orbitalTheta>45</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<oceanBlock>techreborn:techreborn_techreborn.carbonfiber</oceanBlock>
+				<biomeIds>minecraft:frozen_ocean</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Uranus" DIMID="15" customIcon="gasgiantblue">
+			<isKnown>true</isKnown>
+			<hasRings>true</hasRings>
+			<ringColor>0.4,0.4,0.7</ringColor>
+			<GasGiant>true</GasGiant>
+			<gas>fluidmethane</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.435,0.847,0.862</skyColor>
+			<gravitationalMultiplier>130</gravitationalMultiplier>
+			<orbitalDistance>175</orbitalDistance>
+			<orbitalTheta>270</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<planet name="Miranda" DIMID="25" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>70</gravitationalMultiplier>
+				<orbitalDistance>60</orbitalDistance>
+				<orbitalTheta>135</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>minecraft:cold_beach</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Neptune" DIMID="16" customIcon="gasgiantblue">
+			<isKnown>true</isKnown>
+			<GasGiant>true</GasGiant>
+			<gas>fluidmethane</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.141,0.274,0.921</skyColor>
+			<gravitationalMultiplier>130</gravitationalMultiplier>
+			<orbitalDistance>190</orbitalDistance>
+			<orbitalTheta>315</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<planet name="Triton" DIMID="26" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>80</gravitationalMultiplier>
+				<orbitalDistance>70</orbitalDistance>
+				<orbitalTheta>225</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>minecraft:ice_flats</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Pluto" DIMID="17" customIcon="iceworld">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>40</gravitationalMultiplier>
+			<orbitalDistance>200</orbitalDistance>
+			<orbitalTheta>360</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>48000</rotationalPeriod>
+			<atmosphereDensity>10</atmosphereDensity>
+			<biomeIds>minecraft:mutated_ice_flats</biomeIds>
+			<planet name="Charon" DIMID="27" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>35</gravitationalMultiplier>
+				<orbitalDistance>50</orbitalDistance>
+				<orbitalTheta>270</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>48000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>minecraft:ice_mountains</biomeIds>
+			</planet>
+		</planet>
+	</star>
+	<star name="ETech Conglomerate" temp="170" x="-75" y="80" size="1.0" numPlanets="0" numGasGiants="0">
+		<planet name="Litherite" DIMID="30" customIcon="iceworld">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.533,0.509,1</skyColor>
+			<gravitationalMultiplier>90</gravitationalMultiplier>
+			<orbitalDistance>180</orbitalDistance>
+			<orbitalTheta>0</orbitalTheta>
+			<orbitalPhi>270</orbitalPhi>
+			<rotationalPeriod>54000</rotationalPeriod>
+			<atmosphereDensity>50</atmosphereDensity>
+			<oreGen>
+				<ore block="environmentaltech:litherite" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:structure_panel 0 64</artifact>
+			<fillerBlock>minecraft:snow</fillerBlock>
+			<biomeIds>advancedrocketry:crystalchasms</biomeIds>
+			<oceanBlock>techreborn:techreborn_techreborn.potassium</oceanBlock>
+		</planet>
+		<planet name="Erodium" DIMID="31" customIcon="marslike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0,0.839,1</skyColor>
+			<gravitationalMultiplier>80</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalTheta>315</orbitalTheta>
+			<orbitalPhi>45</orbitalPhi>
+			<rotationalPeriod>32000</rotationalPeriod>
+			<atmosphereDensity>0</atmosphereDensity>
+			<oreGen>
+				<ore block="environmentaltech:erodium" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:litherite 0 64</artifact>
+			<fillerBlock>traverse:blue_rock</fillerBlock>
+			<biomeIds>minecraft:mutated_extreme_hills</biomeIds>
+			<oceanBlock>techreborn:techreborn_techreborn.nitrogen</oceanBlock>
+		</planet>
+		<planet name="Kyronite" DIMID="32" customIcon="earthlike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.8,0.615,0.313</skyColor>
+			<gravitationalMultiplier>110</gravitationalMultiplier>
+			<orbitalDistance>80</orbitalDistance>
+			<orbitalTheta>90</orbitalTheta>
+			<orbitalPhi>315</orbitalPhi>
+			<rotationalPeriod>28000</rotationalPeriod>
+			<atmosphereDensity>150</atmosphereDensity>
+			<oreGen>
+				<ore block="environmentaltech:kyronite" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:erodium 0 64</artifact>
+			<fillerBlock>minecraft:dirt</fillerBlock>
+			<biomeIds>minecraft:jungle_hills,minecraft:savanna,minecraft:jungle</biomeIds>
+			<oceanBlock>techreborn:techreborn_techreborn.sodiumpersulfate</oceanBlock>
+		</planet>
+		<planet name="Pladium" DIMID="33" customIcon="earthlike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.8,0.988,0</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>60</orbitalDistance>
+			<orbitalTheta>360</orbitalTheta>
+			<orbitalPhi>135</orbitalPhi>
+			<rotationalPeriod>40000</rotationalPeriod>
+			<atmosphereDensity>105</atmosphereDensity>
+			<seaLevel>90</seaLevel>
+			<oreGen>
+				<ore block="environmentaltech:pladium" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:kyronite 0 64</artifact>
+			<fillerBlock>advancedrocketry:vitrifiedsand</fillerBlock>
+			<biomeIds>minecraft:deep_ocean,minecraft:ocean</biomeIds>
+			<oceanBlock>minecraft:water</oceanBlock>
+		</planet>
+		<planet name="Ionite" DIMID="34" customIcon="moon">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.062,0.811,1</skyColor>
+			<gravitationalMultiplier>60</gravitationalMultiplier>
+			<orbitalDistance>160</orbitalDistance>
+			<orbitalTheta>180</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>48000</rotationalPeriod>
+			<atmosphereDensity>25</atmosphereDensity>
+			<oreGen>
+				<ore block="environmentaltech:ionite" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:pladium 0 64</artifact>
+			<fillerBlock>advancedrocketry:moonturf</fillerBlock>
+			<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+			<oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+		</planet>
+		<planet name="Aethium" DIMID="35" customIcon="marslike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.8,0.537,0</skyColor>
+			<gravitationalMultiplier>70</gravitationalMultiplier>
+			<orbitalDistance>40</orbitalDistance>
+			<orbitalTheta>225</orbitalTheta>
+			<orbitalPhi>90</orbitalPhi>
+			<rotationalPeriod>16000</rotationalPeriod>
+			<atmosphereDensity>60</atmosphereDensity>
+			<oreGen>
+				<ore block="environmentaltech:aethium" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:ionite 0 64</artifact>
+			<fillerBlock>minecraft:hardened_clay</fillerBlock>
+			<biomeIds>minecraft:mutated_mesa,minecraft:mutated_mesa_rock</biomeIds>
+			<oceanBlock>techreborn:techreborn_techreborn.compressedair</oceanBlock>
+		</planet>
+		<planet name="Lonsdaleite" DIMID="36" customIcon="earthlike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.901,0.298,0.776</skyColor>
+			<gravitationalMultiplier>95</gravitationalMultiplier>
+			<orbitalDistance>140</orbitalDistance>
+			<orbitalTheta>140</orbitalTheta>
+			<orbitalPhi>90</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>90</atmosphereDensity>
+			<oreGen>
+				<ore block="environmentaltech:lonsdaleite" minHeight="4" maxHeight="80" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<artifact>environmentaltech:aethium 0 64</artifact>
+			<fillerBlock>minecraft:cobblestone</fillerBlock>
+			<biomeIds>advancedrocketry:oceanspires,minecraft:stone_beach</biomeIds>
+			<oceanBlock>forestry:fluid.ice</oceanBlock>
+		</planet>
+	</star>
+	<star name="Consortium of Resource" temp="200" x="35" y="120" size="1.0" numPlanets="0" numGasGiants="0">
+		<planet name="Common Metals" DIMID="40" customIcon="earthlike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.337,0.858,0.317</skyColor>
+			<gravitationalMultiplier>90</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalTheta>0</orbitalTheta>
+			<orbitalPhi>90</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>140</atmosphereDensity>
+			<oreGen>
+				<ore block="minecraft:coal_ore" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="minecraft:iron_ore" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="minecraft:gold_ore" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="1" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="2" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="3" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="4" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="4" minHeight="4" maxHeight="60" clumpSize="5" chancePerChunk="64" />
+			</oreGen>
+			<fillerBlock>minecraft:mycelium</fillerBlock>
+			<biomeIds>minecraft:mushroom_island</biomeIds>
+			<artifact>minecraft:gold_ore</artifact>
+			<artifact>thermalfoundation:ore</artifact>
+			<artifact>thermalfoundation:ore 2</artifact>
+			<artifact>thermalfoundation:ore 3</artifact>
+			<artifact>techreborn:ore 4</artifact>
+		</planet>
+		<planet name="Dust n Gems" DIMID="41" customIcon="iceworld">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.509,0.541,1</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>200</orbitalDistance>
+			<orbitalTheta>270</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>70</atmosphereDensity>
+			<oreGen>
+				<ore block="actuallyadditions:block_misc" meta="3" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="minecraft:redstone_ore" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="minecraft:emerald_ore" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="minecraft:diamond_ore" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="minecraft:lapis_ore" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="appliedenergistics2:quartz_ore" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="2" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="3" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="forestry:resources" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="10" minHeight="4" maxHeight="80" clumpSize="5" chancePerChunk="64" />
+			</oreGen>
+			<fillerBlock>minecraft:snow</fillerBlock>
+			<biomeIds>minecraft:ice_flats</biomeIds>
+			<artifact>actuallyadditions:block_crystal_empowered</artifact>
+			<artifact>actuallyadditions:block_crystal_empowered 1</artifact>
+			<artifact>actuallyadditions:block_crystal_empowered 2</artifact>
+			<artifact>actuallyadditions:block_crystal_empowered 4</artifact>
+			<artifact>actuallyadditions:block_crystal_empowered 5</artifact>
+		</planet>
+		<planet name="Precious Metals" DIMID="42" customIcon="moon">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.788,0.901,0.952</skyColor>
+			<gravitationalMultiplier>110</gravitationalMultiplier>
+			<orbitalDistance>160</orbitalDistance>
+			<orbitalTheta>90</orbitalTheta>
+			<orbitalPhi>270</orbitalPhi>
+			<rotationalPeriod>48000</rotationalPeriod>
+			<atmosphereDensity>40</atmosphereDensity>
+			<oreGen>
+				<ore block="immersiveengineering:ore" meta="5" minHeight="4" maxHeight="70" clumpSize="15" chancePerChunk="64" />
+				<ore block="libvulpes:ore0" minHeight="4" maxHeight="70" clumpSize="15" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="5" minHeight="4" maxHeight="70" clumpSize="15" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="6" minHeight="4" maxHeight="70" clumpSize="15" chancePerChunk="64" />
+				<ore block="thermalfoundation:ore" meta="7" minHeight="4" maxHeight="70" clumpSize="15" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="8" minHeight="4" maxHeight="70" clumpSize="15" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="9" minHeight="4" maxHeight="70" clumpSize="5" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="11" minHeight="4" maxHeight="70" clumpSize="5" chancePerChunk="64" />
+			</oreGen>
+			<fillerBlock>advancedrocketry:moonturf</fillerBlock>
+			<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+			<artifact>techreborn:ingot 15</artifact>
+			<artifact>thermalfoundation:material 135</artifact>
+			<artifact>thermalfoundation:material 134</artifact>
+			<artifact>immersiveengineering:metal 5</artifact>
+			<artifact>libvulpes:productcrystal</artifact>
+		</planet>
+		<planet name="Hellish Metals" DIMID="43" customIcon="marslike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.55,0.0,0.0</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>20</orbitalDistance>
+			<orbitalTheta>180</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>16000</rotationalPeriod>
+			<atmosphereDensity>180</atmosphereDensity>
+			<oreGen>
+				<ore block="techreborn:ore" meta="5" minHeight="4" maxHeight="60" clumpSize="15" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="6" minHeight="4" maxHeight="60" clumpSize="15" chancePerChunk="64" />
+				<ore block="techreborn:ore" meta="7" minHeight="4" maxHeight="60" clumpSize="15" chancePerChunk="64" />
+				<ore block="minecraft:quartz_ore" minHeight="4" maxHeight="60" clumpSize="15" chancePerChunk="64" />
+				<ore block="tconstruct:ore" minHeight="4" maxHeight="60" clumpSize="15" chancePerChunk="64" />
+				<ore block="tconstruct:ore" meta="1" minHeight="4" maxHeight="60" clumpSize="15" chancePerChunk="64" />
+			</oreGen>
+			<biomeIds>minecraft:hell</biomeIds>
+			<fillerBlock>minecraft:netherrack</fillerBlock>
+			<oceanBlock>thermalfoundation:fluid_pyrotheum</oceanBlock>
+			<artifact>tconstruct:ore</artifact>
+			<artifact>tconstruct:ore 1</artifact>
+			<artifact>techreborn:ore 5</artifact>
+			<artifact>techreborn:ore 6</artifact>
+			<artifact>techreborn:ore 7</artifact>
+		</planet>
+		<planet name="Fusionarium" DIMID="44" customIcon="gasgiantred">
+			<isKnown>false</isKnown>
+			<GasGiant>true</GasGiant>
+			<gas>fluidtritium</gas>
+			<gas>fluiddeuterium</gas>
+			<gas>fluidhelium3</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.890,0.192,0.337</skyColor>
+			<gravitationalMultiplier>200</gravitationalMultiplier>
+			<orbitalDistance>130</orbitalDistance>
+			<orbitalTheta>225</orbitalTheta>
+			<orbitalPhi>45</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<artifact>techreborn:part 9</artifact>
+			<artifact>techreborn:part 12</artifact>
+			<artifact>techreborn:part 38</artifact>
+			<artifact>bigreactors:ingotmetals 3</artifact>
+			<artifact>bigreactors:ingotmetals 4</artifact>
+		</planet>
+		<planet name="The Eye of the Storm" DIMID="45" customIcon="marslike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.964,0.392,0.074</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>10</orbitalDistance>
+			<orbitalTheta>0</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<biomeIds>advancedrocketry:stormland</biomeIds>
+			<oceanBlock>minecraft:lava</oceanBlock>
+			<artifact>minecraft:coal 1</artifact>
+			<artifact>minecraft:fire_charge</artifact>
+			<artifact>fluxnetworks:flux</artifact>
+			<artifact>tconstruct:firewood</artifact>
+			<artifact>quark:charred_nether_bricks</artifact>
+		</planet>
+		<planet name="AdvancedGases" DIMID="46" customIcon="gasgiantblue">
+			<isKnown>false</isKnown>
+			<GasGiant>true</GasGiant>
+			<gas>oxygen</gas>
+			<gas>nitrogen</gas>
+			<gas>hydrogen</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.141,0.274,0.921</skyColor>
+			<gravitationalMultiplier>200</gravitationalMultiplier>
+			<orbitalDistance>60</orbitalDistance>
+			<orbitalTheta>45</orbitalTheta>
+			<orbitalPhi>315</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<artifact>advancedrocketry:bucketnitrogen</artifact>
+			<artifact>advancedrocketry:bucketoxygen</artifact>
+			<artifact>advancedrocketry:buckethydrogen</artifact>
+			<artifact>advancedrocketry:oxygencharger</artifact>
+			<artifact>advancedrocketry:oxygenvent</artifact>
+		</planet>
+	</star>
+	<star name="Universe of Fluids" temp="70" x="-80" y="-40" size="1.0" numPlanets="0" numGasGiants="0">
+		<planet name="Black Gold Ahoy" DIMID="50" customIcon="earthlike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.835,0.870,0.807</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>40</orbitalDistance>
+			<orbitalTheta>60</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<fillerBlock>minecraft:coal_block</fillerBlock>
+			<biomeIds>minecraft:deep_ocean</biomeIds>
+			<oceanBlock>thermalfoundation:fluid_crude_oil</oceanBlock>
+			<artifact>minecraft:coal</artifact>
+			<artifact>advancedrocketry:misc 1</artifact>
+			<artifact>techreborn:part 35</artifact>
+			<artifact>immersiveengineering:material 6</artifact>
+			<artifact>techreborn:dust 9</artifact>
+		</planet>
+		<planet name="That Sweet Sweet Honey" DIMID="51" customIcon="earthlike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.854,0.654,0.184</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>70</orbitalDistance>
+			<orbitalTheta>120</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<fillerBlock>forestry:bee_combs_0</fillerBlock>
+			<biomeIds>minecraft:deep_ocean</biomeIds>			
+			<oceanBlock>forestry:fluid.for.honey</oceanBlock>
+			<artifact>forestry:honey_drop</artifact>
+			<artifact>forestry:bee_combs</artifact>
+			<artifact>harvestcraft:honeyitem</artifact>
+			<artifact>harvestcraft:honeycombitem</artifact>
+			<artifact>careerbees:ingredients 10</artifact>
+		</planet>
+		<planet name="Swimming in Liquid DNA" DIMID="52" customIcon="gasgiantblue">
+			<isKnown>false</isKnown>
+			<GasGiant>true</GasGiant>
+			<gas>binnie.dna.raw</gas>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.945,0.215,0.784</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalTheta>180</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<artifact>gendustry:power_module</artifact>
+			<artifact>gendustry:bee_receptacle</artifact>
+			<artifact>gendustry:upgrade_frame</artifact>
+			<artifact>forestry:royal_jelly</artifact>
+			<artifact>magicbees:resource 5</artifact>
+		</planet>
+		<planet name="Land of the Red Blood" DIMID="53" customIcon="marslike">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.921,0.098,0.168</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>130</orbitalDistance>
+			<orbitalTheta>240</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<fillerBlock>minecraft:redstone_block</fillerBlock>
+			<biomeIds>minecraft:deep_ocean</biomeIds>
+			<oceanBlock>thermalfoundation:fluid_redstone</oceanBlock>
+			<artifact>minecraft:redstone</artifact>
+			<artifact>minecraft:redstone_ore</artifact>
+			<artifact>extrautils2:ingredients</artifact>
+			<artifact>techreborn:plates 4</artifact>
+			<artifact>thermalfoundation:ore_fluid 2</artifact>
+		</planet>
+		<planet name="Frozen but not Solid" DIMID="54" customIcon="iceworld">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.333,0.956,1</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>160</orbitalDistance>
+			<orbitalTheta>300</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<fillerBlock>minecraft:packed_ice</fillerBlock>
+			<biomeIds>minecraft:deep_ocean</biomeIds>
+			<oceanBlock>thermalfoundation:fluid_cryotheum</oceanBlock>
+			<artifact>thermalfoundation:material 1025</artifact>
+			<artifact>thermalfoundation:material 2048</artifact>
+			<artifact>minecraft:packed_ice</artifact>
+			<artifact>minecraft:snow</artifact>
+			<artifact>torchmaster:frozen_pearl</artifact>
+		</planet>
+		<planet name="Fluid of the Endermen" DIMID="55" customIcon="iceworld">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.047,0.450,0.298</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>190</orbitalDistance>
+			<orbitalTheta>360</orbitalTheta>
+			<orbitalPhi>180</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<fillerBlock>chisel:purpur</fillerBlock>
+			<biomeIds>minecraft:deep_ocean</biomeIds>
+			<oceanBlock>thermalfoundation:fluid_ender</oceanBlock>
+			<artifact>thermalfoundation:material 895</artifact>
+			<artifact>extrautils2:endershard</artifact>
+			<artifact>techreborn:dust 20</artifact>
+			<artifact>darkutils:material 1</artifact>
+			<artifact>actuallyadditions:item_misc 19</artifact>
+		</planet>
+	</star>
+</galaxy>

@@ -1,0 +1,29 @@
+{
+    "food": {
+        "items": [
+            "minecraft:beef",
+            "minecraft:chicken",
+            "minecraft:mutton",
+            "minecraft:porkchop",
+            "minecraft:rabbit",
+            "minecraft:rotten_flesh",
+            "minecraft:spider_eye",
+            "natura:edibles",
+            "harvestcraft:duckrawitem",
+            "harvestcraft:frograwitem",
+            "harvestcraft:snailrawitem",
+            "harvestcraft:stockitem",
+            "harvestcraft:turkeyrawitem",
+            "harvestcraft:venisonrawitem",
+            "tconstruct:edible:1",
+            "tconstruct:edible:3",
+            "tconstruct:edible:30",
+            "tconstruct:edible:31",
+            "tconstruct:edible:32",
+            "tconstruct:edible:33",
+            "tconstruct:edible:34",
+            "tconstruct:edible:4"
+        ]
+    },
+    "name": "Raw Meat"
+}

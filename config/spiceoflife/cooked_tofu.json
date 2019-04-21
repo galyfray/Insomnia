@@ -1,0 +1,17 @@
+{
+    "food": {
+        "items": [
+            "harvestcraft:cookedtofabbititem",
+            "harvestcraft:cookedtofaconitem",
+            "harvestcraft:cookedtofeakitem",
+            "harvestcraft:cookedtofeegitem",
+            "harvestcraft:cookedtofenisonitem",
+            "harvestcraft:cookedtofickenitem",
+            "harvestcraft:cookedtofishitem",
+            "harvestcraft:cookedtofuduckitem",
+            "harvestcraft:cookedtofurkeyitem",
+            "harvestcraft:cookedtofuttonitem"
+        ]
+    },
+    "name": "Cooked Tofu"
+}
