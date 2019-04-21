@@ -1,0 +1,14 @@
+{
+    "food": {
+        "items": [
+            "harvestcraft:pecanpieitem",
+            "harvestcraft:roastedchestnutitem",
+            "harvestcraft:roastedpumpkinseedsitem",
+            "harvestcraft:saltedsunflowerseedsitem",
+            "harvestcraft:trailmixitem",
+            "harvestcraft:walnutitem",
+            "harvestcraft:waterchestnutitem"
+        ]
+    },
+    "name": "Nut Meal"
+}

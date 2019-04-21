@@ -1,0 +1,18 @@
+{
+    "food": {
+        "items": [
+            "actuallyadditions:item_food:6",
+            "harvestcraft:enchiladaitem",
+            "harvestcraft:lasagnaitem",
+            "harvestcraft:mushroomlasagnaitem",
+            "harvestcraft:mushroomrisottoitem",
+            "harvestcraft:omuriceitem",
+            "harvestcraft:onigiriitem",
+            "harvestcraft:pastagardeniaitem",
+            "harvestcraft:spagettiandmeatballsitem",
+            "harvestcraft:spaghettidinneritem",
+            "tconstruct:moms_spaghetti"
+        ]
+    },
+    "name": "Pasta Meal"
+}

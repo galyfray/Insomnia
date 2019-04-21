@@ -1,0 +1,17 @@
+{
+    "food": {
+        "items": [
+            "harvestcraft:rawtofabbititem",
+            "harvestcraft:rawtofaconitem",
+            "harvestcraft:rawtofeakitem",
+            "harvestcraft:rawtofeegitem",
+            "harvestcraft:rawtofenisonitem",
+            "harvestcraft:rawtofickenitem",
+            "harvestcraft:rawtofishitem",
+            "harvestcraft:rawtofuduckitem",
+            "harvestcraft:rawtofurkeyitem",
+            "harvestcraft:rawtofuttonitem"
+        ]
+    },
+    "name": "Raw Tofu"
+}

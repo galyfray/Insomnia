@@ -1,0 +1,43 @@
+{
+    "food": {
+        "items": [
+            "minecraft:clownfish",
+            "minecraft:cod",
+            "minecraft:fish",
+            "minecraft:fish:1",
+            "minecraft:fish:2",
+            "minecraft:fish:3",
+            "minecraft:pufferfish",
+            "minecraft:salmon",
+            "harvestcraft:anchovyrawitem",
+            "harvestcraft:bassrawitem",
+            "harvestcraft:calamarirawitem",
+            "harvestcraft:carprawitem",
+            "harvestcraft:catfishrawitem",
+            "harvestcraft:charrrawitem",
+            "harvestcraft:clamrawitem",
+            "harvestcraft:crabrawitem",
+            "harvestcraft:crayfishrawitem",
+            "harvestcraft:eelrawitem",
+            "harvestcraft:greenheartfishitem",
+            "harvestcraft:grouperrawitem",
+            "harvestcraft:herringrawitem",
+            "harvestcraft:jellyfishrawitem",
+            "harvestcraft:mudfishrawitem",
+            "harvestcraft:octopusrawitem",
+            "harvestcraft:perchrawitem",
+            "harvestcraft:sardinerawitem",
+            "harvestcraft:scallionitem",
+            "harvestcraft:scalloprawitem",
+            "harvestcraft:seaweeditem",
+            "harvestcraft:shrimprawitem",
+            "harvestcraft:snapperrawitem",
+            "harvestcraft:tilapiarawitem",
+            "harvestcraft:troutrawitem",
+            "harvestcraft:tunarawitem",
+            "harvestcraft:turtlerawitem",
+            "harvestcraft:walleyerawitem"
+        ]
+    },
+    "name": "Raw Fish"
+}

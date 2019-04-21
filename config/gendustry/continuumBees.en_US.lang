@@ -1,0 +1,15 @@
+gendustry.bees.species.Blutonium=Blutonium
+gendustry.bees.species.Blutonium.description=Blutonium bee, need Blutonium block to be breeded
+gendustry.allele.flowers.blutoniumBlock=Blutonium
+
+gendustry.bees.species.Cyanite=Cyanite
+gendustry.bees.species.Cyanite.description=Cyanite bee, need Cyanite block to be breeded
+gendustry.allele.flowers.cyaniteBlock=Cyanite
+
+gendustry.bees.species.Impregnable=Impregnable
+gendustry.bees.species.Impregnable.description=Impregnable bee, need a Titanium block to be breeded
+gendustry.allele.flowers.titaniumBlock=Titanium
+
+gendustry.bees.species.Invincible=Invincible
+gendustry.bees.species.Invincible.description=Invincible bee, need a tungsten block to be breeded
+gendustry.allele.flowers.tungstenBlock=Tungsten

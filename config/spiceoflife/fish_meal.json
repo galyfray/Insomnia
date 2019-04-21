@@ -1,0 +1,28 @@
+{
+    "food": {
+        "items": [
+            "actuallyadditions:item_food:3",
+            "harvestcraft:charsiuitem",
+            "harvestcraft:clamchowderitem",
+            "harvestcraft:coconutshrimpitem",
+            "harvestcraft:crabkimbapitem",
+            "harvestcraft:crawfishetoufeeitem",
+            "harvestcraft:crayfishsaladitem",
+            "harvestcraft:fishandchipsitem",
+            "harvestcraft:fishdinneritem",
+            "harvestcraft:fishlettucewrapitem",
+            "harvestcraft:fishsticksitem",
+            "harvestcraft:fishtacoitem",
+            "harvestcraft:futomakiitem",
+            "harvestcraft:pistachiobakedsalmonitem",
+            "harvestcraft:salmonpattiesitem",
+            "harvestcraft:sardinesinhotsauceitem",
+            "harvestcraft:scallionbakedpotatoitem",
+            "harvestcraft:scallopcookeditem",
+            "harvestcraft:shrimpokrahushpuppiesitem",
+            "harvestcraft:sushiitem",
+            "harvestcraft:tunasaladitem"
+        ]
+    },
+    "name": "Fish Meal"
+}

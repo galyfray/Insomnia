@@ -1,0 +1,20 @@
+{
+    "food": {
+        "items": [
+            "minecraft:golden_apple",
+            "minecraft:golden_apple:1",
+            "minecraft:melon",
+            "natura:soups:9",
+            "harvestcraft:applefritteritem",
+            "harvestcraft:applepieitem",
+            "harvestcraft:figbaritem",
+            "harvestcraft:mangochutneyitem",
+            "harvestcraft:marinatedcucumbersitem",
+            "harvestcraft:peachcobbleritem",
+            "harvestcraft:poachedpearitem",
+            "harvestcraft:strawberrypieitem",
+            "harvestcraft:strawberrysaladitem"
+        ]
+    },
+    "name": "Fruit Meal"
+}

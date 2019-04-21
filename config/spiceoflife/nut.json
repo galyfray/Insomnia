@@ -1,0 +1,19 @@
+{
+    "food": {
+        "items": [
+            "extratrees:food:59",
+            "extratrees:food:9",
+            "forestry:fruits:1",
+            "forestry:fruits:2",
+            "forestry:fruits:5",
+            "harvestcraft:almonditem",
+            "harvestcraft:cashewitem",
+            "harvestcraft:chestnutitem",
+            "harvestcraft:dateitem",
+            "harvestcraft:peanutitem",
+            "harvestcraft:pecanitem",
+            "harvestcraft:pistachioitem"
+        ]
+    },
+    "name": "Nut"
+}

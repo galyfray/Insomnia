@@ -1,0 +1,30 @@
+{
+    "food": {
+        "items": [
+            "minecraft:cooked_beef",
+            "minecraft:cooked_chicken",
+            "minecraft:cooked_mutton",
+            "minecraft:cooked_porkchop",
+            "minecraft:cooked_rabbit",
+            "natura:edibles:1",
+            "harvestcraft:apricotglazedporkitem",
+            "harvestcraft:beefjerkyitem",
+            "harvestcraft:beefwellingtonitem",
+            "harvestcraft:cashewchickenitem",
+            "harvestcraft:cookedgrubitem",
+            "harvestcraft:duckcookeditem",
+            "harvestcraft:snailcookeditem",
+            "harvestcraft:venisoncookeditem",
+            "harvestcraft:zombiejerkyitem",
+            "tconstruct:edible",
+            "tconstruct:edible:10",
+            "tconstruct:edible:11",
+            "tconstruct:edible:12",
+            "tconstruct:edible:13",
+            "tconstruct:edible:14",
+            "tconstruct:edible:15",
+            "tconstruct:edible:2"
+        ]
+    },
+    "name": "Meat"
+}

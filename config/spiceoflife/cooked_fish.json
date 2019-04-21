@@ -1,0 +1,22 @@
+{
+    "food": {
+        "items": [
+            "minecraft:cooked_cod",
+            "minecraft:cooked_fish",
+            "minecraft:cooked_fish:1",
+            "minecraft:cooked_salmon",
+            "harvestcraft:calamaricookeditem",
+            "harvestcraft:clamcookeditem",
+            "harvestcraft:crabcookeditem",
+            "harvestcraft:crayfishcookeditem",
+            "harvestcraft:octopuscookeditem",
+            "harvestcraft:shrimpcookeditem",
+            "harvestcraft:turtlecookeditem",
+            "tconstruct:edible:20",
+            "tconstruct:edible:21",
+            "tconstruct:edible:22",
+            "tconstruct:edible:23"
+        ]
+    },
+    "name": "Fish"
+}

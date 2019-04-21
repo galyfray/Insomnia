@@ -1,0 +1,11 @@
+{
+    "food": {
+        "items": [
+            "actuallyadditions:item_food:7",
+            "harvestcraft:mochiitem",
+            "harvestcraft:ramenitem",
+            "harvestcraft:spagettiitem"
+        ]
+    },
+    "name": "Pasta"
+}
