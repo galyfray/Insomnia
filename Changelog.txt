@@ -1,5 +1,0 @@
-adding :
-    -Plein de block pour automatiser les craft
-    -Recette pour les graine sans Avaritia
-Mods added :
-    -Content Tweaker
